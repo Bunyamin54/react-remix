@@ -38,26 +38,26 @@ import './App.css'
 //   }
 
   function App () {
-    return (
-     < div className = "App">
-      <Job salary = {5000}  position="developer"  company="Google" />
-      <Job salary = {4000}  position="tester"  company="Microsoft" />
-      <Job salary = {6000}  position="team lead"  company="Amazon" />
-     </div>
-    )
+    // return (
+    //  < div className = "App">
+    //   <Job salary = {5000}  position="developer"  company="Google" />
+    //   <Job salary = {4000}  position="tester"  company="Microsoft" />
+    //   <Job salary = {6000}  position="team lead"  company="Amazon" />
+    //  </div>
+    // )
   }
 
-    const Job =(props) => {
-      return (
-         <div>
-        <h1>{props.salary}</h1>
-        <h2>{props.position}</h2>
-        <h3>{props.company}</h3>
-         </div>
+    // const Job =(props) => {
+    //   return (
+    //      <div>
+    //     <h1>{props.salary}</h1>
+    //     <h2>{props.position}</h2>
+    //     <h3>{props.company}</h3>
+    //      </div>
 
-      )
+    //   )
 
-    }
+    // }
 
   
 
