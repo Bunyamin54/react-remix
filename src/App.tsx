@@ -1,11 +1,20 @@
-
 import './App.css'
 
 function App() {
 
+const name =  <h1>Bunyamin</h1>
+
+const age= <h2> 24 </h2>
 
   return (
-     <p>Vite + React + TypeScript</p>
+
+     <div className= "App"> 
+     
+      <h1> {name}</h1>
+      <h2> {age} </h2>
+   
+
+     </div>
   )
 }
 
