@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./Main.css";
+import donerDolap from "./images/donerdolap.jpg"
 
 export const Main = () => {
   const headerStyle = {
@@ -9,6 +10,8 @@ export const Main = () => {
     fontSize: "2rem",
     fontWieht: "bold",
   };
+
+
 
   return (
     <main>
@@ -47,7 +50,9 @@ export const Main = () => {
 
            <img id="img-id" src="https://cdn.pixabay.com/photo/2025/08/13/13/02/landscape-9772229_640.jpg" alt="kuzey isikliklari" />
 
-           <img id="img-id" src="./images/donerdolap.jpg" alt="doner" />
+           {/* local ortanmda bulunan bir resimi import ederek alabilirz dogrudan almayiz  */}
+
+           <img id="img-id" src={donerDolap} alt="doner" />
          </div>
 
            
