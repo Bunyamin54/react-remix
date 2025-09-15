@@ -44,7 +44,13 @@ export const Main = () => {
 
          <div>
           <img  className="img" src="https://cdn.pixabay.com/photo/2024/07/11/23/36/candles-8889188_640.jpg" alt="mum" />
+
+           <img id="img-id" src="https://cdn.pixabay.com/photo/2025/08/13/13/02/landscape-9772229_640.jpg" alt="kuzey isikliklari" />
+
+           <img id="img-id" src="./images/donerdolap.jpg" alt="doner" />
          </div>
+
+           
     </main>
   );
 };
