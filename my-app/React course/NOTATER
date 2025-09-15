@@ -62,3 +62,13 @@ yarn add axios
 yarn add bootstrap axios // to packages
 
 yarn start
+
+## Component 
+
+Componentler buyuk harfle baslar 
+
+Component icerisnde js yi html i barindiran ve reacti barindiran bir yapi , Export ile disariye acilmis ve App js icinde cagrilmis bir yapi import ile
+
+Self closing olarak kapanir <APP/> seklinde
+
+SPA = singel page application demektir tum yapilar en sonunda onun altinda cagrilir 
