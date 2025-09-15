@@ -1,29 +1,19 @@
 import React from "react";
 
-import "./Main.css"
+import "./Main.css";
 
 export const Main = () => {
-
-   const headerStyle = {
-
+  const headerStyle = {
     color: "red",
     backgroundColor: "gray",
     fontSize: "2rem",
-    fontWieht: "bold"
-
-
-
-   }
-
-
-
+    fontWieht: "bold",
+  };
 
   return (
     <main>
-
-       {/* inline css key- value notasyon olraka camelCase */}
-      <h2   style={{color: "red", backgroundColor: "blue" }}>Hello Main</h2>
-
+      {/* inline css key- value notasyon olraka camelCase */}
+      <h2 style={{ color: "red", backgroundColor: "blue" }}>Hello Main</h2>
 
       <p className="parag">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, dolorem
@@ -45,8 +35,12 @@ export const Main = () => {
         harum ducimus?
       </p>
 
-        <h2 style={headerStyle}>Other Header Main </h2>
+      <h2 style={headerStyle}>Other Header Main </h2>
 
+
+        <div >
+          <img className="img" src="https://cdn.pixabay.com/photo/2025/09/05/18/31/cave-9817865_640.jpg" alt="boncuk" />
+        </div>
     </main>
   );
 };
