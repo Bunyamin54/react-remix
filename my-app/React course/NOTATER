@@ -90,3 +90,5 @@ App,js Anne gibi derleyip toparlayan birlestiriyor childirinlari .
 Bundel >>> dosyalarin tek bir dosyada toplanmasi anlamina geliyr  webpack , vit, percel  gibi araclar bundler dir. 
 
 Export & Import mantigi ile calisir React 
+
+HTML- markup demektir. JSX  JS+ XML = JSX 
