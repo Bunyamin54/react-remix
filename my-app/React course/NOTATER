@@ -3,6 +3,7 @@
 React is a JavaScript library for building user interfaces. It follows a Component-based architecture and uses the concept of a Virtual DOM for efficient updates.
 
 ## MVC Pattern
+
 Traditionally, UI frameworks use the MVC (Model, View, Controller) approach. In React, the focus is mostly on the View part.
 
 Component Architecture
@@ -27,6 +28,7 @@ React uses a diffing algorithm to compare the Virtual DOM with the previous vers
 Only the parts that actually changed are updated in the real DOM.
 
 ## Performance
+
 This makes UI updates much faster because React avoids updating the entire DOM — it only updates what is necessary.
 React does not specify exactly how often it updates; it depends on changes in the application. Since it is open source, the implementation details may evolve.
 

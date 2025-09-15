@@ -3,6 +3,7 @@ import './index.css';
 
 
  // Component 
+ // Conmpponentler buyuk harfle baslar
 
 function App() {
 
