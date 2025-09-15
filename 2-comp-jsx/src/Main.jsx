@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./Main.css"
+
 export const Main = () => {
 
    const headerStyle = {
@@ -23,7 +25,7 @@ export const Main = () => {
       <h2   style={{color: "red", backgroundColor: "blue" }}>Hello Main</h2>
 
 
-      <p>
+      <p className="parag">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, dolorem
         facilis sapiente quod deserunt at aperiam impedit perferendis ad rerum,
         veritatis veniam est aspernatur? Modi, porro maiores! Id veniam ab
