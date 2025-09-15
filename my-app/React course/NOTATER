@@ -78,3 +78,5 @@ SPA = singel page application demektir tum yapilar en sonunda onun altinda cagri
 
 Index,js baba gibi en sonunda cikis noktasi 
 App,js Anne gibi derleyip toparlayan birlestiriyor childirinlari .
+
+Bundel >>> dosyalarin tek bir dosyada toplanmasi anlamina geliyr  webpack , vit, percel  gibi araclar bundler dir. 
