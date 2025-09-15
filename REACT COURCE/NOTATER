@@ -46,3 +46,12 @@ In Tr who uses?
 
 Trednyol 
 Hepsiburada 
+
+
+React Starter
+
+yarn create react-app my-app
+yarn start 
+
+..cd my-app
+code .  // Direkt til Visual code
