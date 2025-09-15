@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.css';
 
 
  // Component 
@@ -12,8 +13,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>My Remix App</h1>
-      <p>{deneme} e hosgeldiniz</p>
+      <h1 className='title'>My Remix App</h1>
+      <p className='par'>{deneme} e hosgeldiniz</p>
     </div>
   );
 }
