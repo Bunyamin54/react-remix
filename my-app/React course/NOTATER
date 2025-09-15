@@ -65,6 +65,14 @@ yarn add bootstrap axios // to packages
 
 yarn start
 
+## Projeyi derleme
+
+yarn install 
+yarn start
+yarn add tailwind react router. (birden fazla paket eklemek istersek)
+yarn build -- derleme bundel islemi icin 
+yarn test. - dosya adi 
+
 ## Component 
 
 Componentler buyuk harfle baslar 
