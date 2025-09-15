@@ -53,6 +53,9 @@ export const Main = () => {
            {/* local ortanmda bulunan bir resimi import ederek alabilirz dogrudan almayiz  */}
 
            <img id="img-id" src={donerDolap} alt="doner" />
+
+            {/* pbulic dosyasina koydugumuzde bu sekidle coklu resimler icin public resimlerde assetler kullanilir  */}
+           <img id="img-id" src="./img/nature.jpg" alt="nature" />
          </div>
 
            
