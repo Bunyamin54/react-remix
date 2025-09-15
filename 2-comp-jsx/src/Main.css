@@ -7,3 +7,10 @@
    color:blueviolet;
    background:aqua,
 }
+
+.img{
+  width: 700px;
+  border: 2px solid;
+  border-radius: 5px;
+  
+}
