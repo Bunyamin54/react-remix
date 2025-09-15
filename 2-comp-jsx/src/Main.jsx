@@ -1,7 +1,31 @@
-import React from 'react'
+import React from "react";
 
 export const Main = () => {
   return (
-    <div>Hello Main </div>
-  )
-}
+    <main>
+      <h2 style={{ color: "blue", fontSize: "24px" }}>Hello Main</h2>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, dolorem
+        facilis sapiente quod deserunt at aperiam impedit perferendis ad rerum,
+        veritatis veniam est aspernatur? Modi, porro maiores! Id veniam ab
+        facilis dolor qui nostrum modi necessitatibus distinctio veritatis
+        repellat! Quibusdam officiis aliquam deserunt quas iste repellat impedit
+        dicta maxime similique, amet voluptatibus, illo porro quis asperiores
+        facere tempora excepturi distinctio dolor! Vel animi sint non,
+        consequatur quas dolorum in provident laudantium, nemo ipsam cumque id
+        officia ut nostrum quos fugit esse facilis ad. Quia at ipsam odio aut ad
+        ipsum eveniet eius officia ipsa. Mollitia a itaque alias consectetur
+        officia?
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+        necessitatibus, saepe labore sint ipsam sed iure corrupti veritatis
+        harum ducimus?
+      </p>
+    </main>
+  );
+};
+
+export default Main;

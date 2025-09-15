@@ -96,3 +96,5 @@ HTML- markup demektir. JSX  JS+ XML = JSX
 <> <>= Fragment react da demektir
 
 ES/ ile rafce ile kisaltamalr componentler hizlica otamatik olusturlur
+
+inline css key value seklinde 
