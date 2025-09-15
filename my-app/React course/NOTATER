@@ -72,3 +72,7 @@ Component icerisnde js yi html i barindiran ve reacti barindiran bir yapi , Expo
 Self closing olarak kapanir <APP/> seklinde
 
 SPA = singel page application demektir tum yapilar en sonunda onun altinda cagrilir 
+
+
+Index,js baba gibi en sonunda cikis noktasi 
+App,js Anne gibi derleyip toparlayan birlestiriyor childirinlari .
