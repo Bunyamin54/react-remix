@@ -1,9 +1,27 @@
 import React from "react";
 
 export const Main = () => {
+
+   const headerStyle = {
+
+    color: "red",
+    backgroundColor: "gray",
+    fontSize: "2rem",
+    fontWieht: "bold"
+
+
+
+   }
+
+
+
+
   return (
     <main>
-      <h2 style={{ color: "blue", fontSize: "24px" }}>Hello Main</h2>
+
+       {/* inline css key- value notasyon olraka camelCase */}
+      <h2   style={{color: "red", backgroundColor: "blue" }}>Hello Main</h2>
+
 
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, dolorem
@@ -24,6 +42,9 @@ export const Main = () => {
         necessitatibus, saepe labore sint ipsam sed iure corrupti veritatis
         harum ducimus?
       </p>
+
+        <h2 style={headerStyle}>Other Header Main </h2>
+
     </main>
   );
 };

@@ -97,4 +97,8 @@ HTML- markup demektir. JSX  JS+ XML = JSX
 
 ES/ ile rafce ile kisaltamalr componentler hizlica otamatik olusturlur
 
-inline css key value seklinde 
+inline css key value seklinde   {/* inline css key- value notasyon olraka camelCase */}
+
+1- style={{color: "red", backgroundColor: "blue" }}
+
+2- property olarak da kullanabilirz  style={headerStyle}>
