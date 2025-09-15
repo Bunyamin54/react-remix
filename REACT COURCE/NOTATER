@@ -48,10 +48,17 @@ Trednyol
 Hepsiburada 
 
 
-React Starter
+## React Starter
 
 yarn create react-app my-app
 yarn start 
 
 ..cd my-app
 code .  // Direkt til Visual code
+
+## If you want to add some packeges 
+
+yarn add axios
+yarn add bootstrap axios // to packages
+
+yarn start
