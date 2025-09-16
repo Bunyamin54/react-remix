@@ -1,0 +1,25 @@
+/*  Normal Css ortaminda "" gerek kalmiyor   */
+
+.parag {
+  color: blueviolet;
+  background: aqua;
+}
+
+.img {
+  width: 700px;
+  border: 2px solid;
+  margin-top: 20px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+
+#img-id{
+
+  width: 850px;
+  border: 1px solid;
+  margin-top: 10px;
+  border-radius: 1px;
+  margin-right: 10px;
+
+}
