@@ -102,3 +102,9 @@ ES/ ile rafce ile kisaltamalr componentler hizlica otamatik olusturlur
 1- style={{color: "red", backgroundColor: "blue" }}
 
 2- property olarak da kullanabilirz  style={headerStyle}>
+
+
+# Props - parametre demektir 
+
+Tek yonlu olur Parentden /  Childe dogru 
+
