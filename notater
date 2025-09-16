@@ -106,4 +106,8 @@ ES/ ile rafce ile kisaltamalr componentler hizlica otamatik olusturlur
 
 # Props - parametre demektir 
 
-Tek yonlu olur Parentden /  Childe dogru 
+Tek yonlu olur Parentden /  Childe dogru Veri gonderme childe veri paylasimi
+
+Child componente veri gonderme
+
+## Props parentden childe bir tek yonlu bir veri akisi saglar... Nested yapi 
