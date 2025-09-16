@@ -3,6 +3,7 @@
 React is a JavaScript library for building user interfaces. It follows a Component-based architecture and uses the concept of a Virtual DOM for efficient updates.
 
 ## MVC Pattern
+
 Traditionally, UI frameworks use the MVC (Model, View, Controller) approach. In React, the focus is mostly on the View part.
 
 Component Architecture
@@ -27,6 +28,7 @@ React uses a diffing algorithm to compare the Virtual DOM with the previous vers
 Only the parts that actually changed are updated in the real DOM.
 
 ## Performance
+
 This makes UI updates much faster because React avoids updating the entire DOM — it only updates what is necessary.
 React does not specify exactly how often it updates; it depends on changes in the application. Since it is open source, the implementation details may evolve.
 
@@ -62,3 +64,46 @@ yarn add axios
 yarn add bootstrap axios // to packages
 
 yarn start
+
+## Projeyi derleme
+
+yarn install 
+yarn start
+yarn add tailwind react router. (birden fazla paket eklemek istersek)
+yarn build -- derleme bundel islemi icin 
+yarn test. - dosya adi 
+
+## Component 
+
+Componentler buyuk harfle baslar 
+
+Component icerisnde js yi html i barindiran ve reacti barindiran bir yapi , Export ile disariye acilmis ve App js icinde cagrilmis bir yapi import ile
+
+Self closing olarak kapanir <APP/> seklinde
+
+SPA = singel page application demektir tum yapilar en sonunda onun altinda cagrilir 
+
+
+Index,js baba gibi en sonunda cikis noktasi 
+App,js Anne gibi derleyip toparlayan birlestiriyor childirinlari .
+
+Bundel >>> dosyalarin tek bir dosyada toplanmasi anlamina geliyr  webpack , vit, percel  gibi araclar bundler dir. 
+
+Export & Import mantigi ile calisir React 
+
+HTML- markup demektir. JSX  JS+ XML = JSX 
+
+<> <>= Fragment react da demektir
+
+ES/ ile rafce ile kisaltamalr componentler hizlica otamatik olusturlur
+
+## inline css key value seklinde   {/* inline css key- value notasyon olraka camelCase */}
+
+1- style={{color: "red", backgroundColor: "blue" }}
+
+2- property olarak da kullanabilirz  style={headerStyle}>
+
+
+# Props - parametre demektir 
+
+Tek yonlu olur Parentden /  Childe dogru 
