@@ -122,3 +122,7 @@ Yukardan asagi dogru iletimine prop drilling denir.
 - css dosyalari dogrudan import edilebiliyor. webpackden dolayi 
 - for each return ozellig yoktur o yuzden cogu zaman biz map kullaniriz. 
 {key} propu inherit bir props reactin icinde heryerde kullanilabilir. 
+
+<> = Wrapper 
+
+- Birden fazla statement kullaniclaksa o zaman fonksiyonun suslu {} ve return keywordu kullnamasi gerekir. 
