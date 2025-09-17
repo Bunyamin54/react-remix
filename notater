@@ -168,3 +168,5 @@ cosnt [counter,    setCounter]          = useState(0)
 Baslangic degeri // Primitiv veya //  Non primitiv olabilir. 
 
 import {useState} from React dan import edebilriz 
+
+- Bir Statetin degeri sadece setter ile olabilir. 
