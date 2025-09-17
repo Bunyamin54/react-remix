@@ -4,7 +4,7 @@
 //! React 16.8 versiyonu ile gelmistir ve geldikten sonra Class-componentler'in
 //! kullanimi cok azaltmistir.
 
-import { useState } from "react";
+import { useState, useEffect, useContext } from "react";
 
 //? React'ta useState(), useEffect(), useContext() gibi bir cok built-in
 //? Hook bulunmaktadir. Ayrica custom hook tanimlamak da mumkundur.

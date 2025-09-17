@@ -174,3 +174,9 @@ import {useState} from React dan import edebilriz
 - State degisrse re render eder react ile algoritma degistigini anlar differens algoritmasi - degisenler dom a basilir. 
 
 - //     {/* Eger setCount metodunu callback ile yazmazsak bu metot ilk acilistan itibaren doğrudan cagirilmis olur. Bu durumda da count state'inin gunceller. State guncellendigi icinde component re-render olur. Re-render ise yeninden setCount araciligi state'in guncellenmesine yol acar ve sonsuz donguye girer */}
+
+- Hooklar use ile baslar 
+- React componenti icinde kullanilir hooklar
+- Hooklar ust seviyede kullanilir ana seviyesinde govdesinde kullanilir
+- Custom hook da kullanabiliriz. 
+- useState, useEffect, useContext
