@@ -1,13 +1,21 @@
-
-import data from "./data"
+import Card from "./components/card/Card";
+import data from "./data";
 
 function App() {
-  console.log(data)
+  console.log(data);
   return (
     <>
-    <h1>App</h1>
+      <h1>Languages</h1>
+    
+      {data.map() }
+      <Card
+        id={data.id}
+        lang={data.language}
+        img={data.img}
+        btn={data.btnName}
+      />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

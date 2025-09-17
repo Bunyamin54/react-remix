@@ -117,3 +117,7 @@ Child componente veri gonderme
 Proplar tek yonludur- parentden childe gider siblingler arasi degismez, ortak parentden cekilir
 
 Yukardan asagi dogru iletimine prop drilling denir. 
+
+- best praksis closor isimleri kucuk harfle
+- css dosyalari dogrudan import edilebiliyor. webpackden dolayi 
+- for each return ozellig yoktur o yuzden cogu zaman biz map kullaniriz. 
