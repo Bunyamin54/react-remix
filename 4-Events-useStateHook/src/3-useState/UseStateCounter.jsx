@@ -4,6 +4,8 @@
 //! React 16.8 versiyonu ile gelmistir ve geldikten sonra Class-componentler'in
 //! kullanimi cok azaltmistir.
 
+import { useState } from "react"
+
 //? React'ta useState(), useEffect(), useContext() gibi bir cok built-in
 //? Hook bulunmaktadir. Ayrica custom hook tanimlamak da mumkundur.
 
@@ -17,34 +19,35 @@
 //*    (Custom hook'lar icerisinde bir hook cagrilabilir)
 //?    https://react.dev/reference/react
 //* =============================================================
-import { useState, useEffect, useContext, useReducer } from "react"
+
+ 
 
 const UseStateCounter = () => {
-  //   let count = 0
+//  let count = 0
+
+const [count, setCount] = useState(0)
+
 
   //! count adinda bir state tanimlamis olduk ve baslangic degerine 0 atadik.
-  const [count, setCount] = useState(0)
 
-  const handleInc = () => {
-    // count = count + 1
-    //! Bir state'in degeri sadece setter metodu ile olabilir.
-    setCount(count + 1)
+  const handelInc = () => {
+
+    //  count = count + 1
+
+    setCount(count +1)
+
+     console.log(count)
+
   }
 
-  const handleDec = () => {
-    if (count <= 0) {
-      alert("count can not be less than 0")
-    } else {
-      setCount(count - 1)
-    }
-  }
+
 
   return (
     <div>
 
   <h2>USE STATE HOOK</h2>
-  <h1>Count:0</h1>
-  <button>INC</button>
+  <h1>Count:{count}</h1>
+  <button onClick={handelInc}>INC</button>
   <button>CLR</button>
   <button>DEC</button>
 
