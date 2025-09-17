@@ -134,3 +134,14 @@ onClick = {handleClick}. event handler dir.
 Js alaninda function yazilir - return den once 
 
 function parzantezli sekilde kullanilmaz 
+
+- Reactin degismesi gereken seyleri State oluyor baslangicte hersey statik oluyor State ler ile Doma baislmasini yeniden basilmaisni Stateler ile saglariz. 
+
+- Yeniden render edilmesini saglayan 2 sey 1-prop 2-state 
+- State degisirse component render olur prop degisirse component render olur. 
+
+- Aksi belirtilmedigi surece react statik olarak kabul eder herseyi manipulasyonlari azaltmak icin.
+
+
+
+
