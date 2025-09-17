@@ -11,7 +11,7 @@ import "./Buton.module.css"
 const Buton = ({ btn }) => {
   return (
    <div>
-  <h3>Button</h3>
+  <button>{btn}</button>
    </div>
   )
 }

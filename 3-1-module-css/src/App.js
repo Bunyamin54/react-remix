@@ -6,14 +6,16 @@ function App() {
   return (
     <>
       <h1>Languages</h1>
-    
-      {data.map() }
-      <Card
-        id={data.id}
-        lang={data.language}
-        img={data.img}
-        btn={data.btnName}
+
+    {data.map( ({id,img,btnName,language}) => (
+     <Card
+        key={id}
+        lang={language}
+        img={img}
+        btn={btnName}
       />
+   ) )}
+     
     </>
   );
 }
