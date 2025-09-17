@@ -7,10 +7,10 @@ import UseStateObject from "./3-useState/UseStateObject"
 function App() {
   return (
     <div>
-      <Events/>
+      {/* <Events/> */}
        {/* <Counter/>  */}
-      {/* <UseStateCounter /> */}
-      {/* <UseStateObject /> */}
+      <UseStateCounter /> 
+   {/* <UseStateObject />  */}
     </div>
   )
 }
