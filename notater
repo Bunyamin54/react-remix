@@ -144,6 +144,13 @@ function parzantezli sekilde kullanilmaz
 
 - State birseyleri interaktif sekilde basilmasini saglamak icin State kullaniriz. Dom da basilan interaktif olan nesneler icin State kullaniriz. 
 
+## State
+
+State kullanmanin 2 yontemi var 
+- Class component artik cok kullanilmiyor. erisiren state this.state.count + 1. gibi this ile erisilir
+
+
+
 
 
 
