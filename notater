@@ -126,3 +126,11 @@ Yukardan asagi dogru iletimine prop drilling denir.
 <> = Wrapper 
 
 - Birden fazla statement kullaniclaksa o zaman fonksiyonun suslu {} ve return keywordu kullnamasi gerekir. 
+
+## useState hook Events in React 
+camelCase formatinda yazilir eventler 
+
+onClick = {handleClick}. event handler dir.
+Js alaninda function yazilir - return den once 
+
+
