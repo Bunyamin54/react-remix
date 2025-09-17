@@ -142,6 +142,8 @@ function parzantezli sekilde kullanilmaz
 
 - Aksi belirtilmedigi surece react statik olarak kabul eder herseyi manipulasyonlari azaltmak icin.
 
+- State birseyleri interaktif sekilde basilmasini saglamak icin State kullaniriz. 
+
 
 
 
