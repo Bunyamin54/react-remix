@@ -202,3 +202,4 @@ ancak ve ancak component veya baska bir hookun icinde cagrilabilir
 
 ## UseStateObject
 
+... spread operatoru ile obje icerisini acariz...
