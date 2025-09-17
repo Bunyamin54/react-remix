@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <Events/>
-      {/* <Counter />  */}
+       {/* <Counter/>  */}
       {/* <UseStateCounter /> */}
       {/* <UseStateObject /> */}
     </div>
