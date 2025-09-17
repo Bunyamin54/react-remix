@@ -91,12 +91,26 @@
 // export default UseStateObject
 
 
-import React from 'react'
+import React, { useState } from 'react'
 
 const UseStateObject = () => {
+
+const [Name, setName] = useState("Ahmet Can")
+const [Age, setAge] = useState(30)
+const [salary, setSalary] = useState(50000)
+
+
   return (
     <div>
       <h1>USE STATE OBJECT</h1>
+
+      <h2>Name:</h2>
+      <h2>Age:</h2>
+      <h2>Salary</h2>
+
+       <button>Change name</button>
+       <button>inc age</button>
+       <button>inc salary</button>
     </div>
   )
 }
