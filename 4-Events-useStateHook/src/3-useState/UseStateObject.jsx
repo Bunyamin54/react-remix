@@ -75,7 +75,7 @@
 //       {toggle && <UseStateCounter />}
 
 //       {/* 3 ayrı state olarak kullanmak */}
-//       {/* 
+//       {/*
 //       <h1>USE STATE OBJECT</h1>
 //       <h2>NAME:{name}</h2>
 //       <h2>AGE:{age}</h2>
@@ -90,29 +90,37 @@
 
 // export default UseStateObject
 
-
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
 const UseStateObject = () => {
+  // const [name, setName] = useState("Ahmet Can")
+  // const [age, setAge] = useState(30)
+  // const [salary, setSalary] = useState(50000)
 
-const [Name, setName] = useState("Ahmet Can")
-const [Age, setAge] = useState(30)
-const [salary, setSalary] = useState(50000)
-
+  const [kisi, setKisi] = useState({
+    name: "Ahmet Kan",
+    age: 30,
+    salary: 50000,
+  });
 
   return (
     <div>
       <h1>USE STATE OBJECT</h1>
 
-      <h2>Name:</h2>
-      <h2>Age:</h2>
-      <h2>Salary</h2>
+      <h2>Name:{kisi.name}</h2>
+      <h2>Age:{kisi.age}</h2>
+      <h2>Salary:{kisi.salary}</h2>
 
-       <button>Change name</button>
-       <button>inc age</button>
-       <button>inc salary</button>
+      {/* <button onClick={() => setName("Mehmet Kan")}>Change name</button>
+       <button onClick={() => setAge(age+ 1)}>inc age</button>
+       <button onClick={() => setSalary(salary + 10000)}>inc salary</button> */}
+      <button onClick={() => setKisi({ ...kisi, name: "Mehmet Kan" })}>
+        Change name
+      </button>
+      <button onClick={() => setKisi({...kisi, age: kisi.age +1 })}>inc age</button>
+      <button onClick={() => setKisi({...kisi, salary: kisi.salary + 10000})}>inc salary</button>
     </div>
-  )
-}
+  );
+};
 
-export default UseStateObject
+export default UseStateObject;
