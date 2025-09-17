@@ -1,4 +1,5 @@
-
+import Buton from "../buton/Buton"
+import "./Card.module.css"
 
 //* module.css'de derleyici CSS class'larini alarak bunlari unique olacak
 //* sekilde yeniden adlandirir. (Ornek: card_title__XaSde)
@@ -6,11 +7,17 @@
 //* baska class tarafindan ezilmesi (overriding) engellenir.
 //* CCS module Webpack, Browsify gibi tool'lar ile kullanilabilir.
 
-const Card = ({ lang, btn, img }) => {
+import React from 'react'
+
+const Card = ({lang,id,btn,img}) => {
   return (
-    <div>
-     
-    </div>
+     <div>
+      <h1>{lang}</h1>
+      <img src={img} alt="image"/>
+      <h2>{btn}</h2>
+         <Buton/>
+     </div>
+  
   )
 }
 

@@ -1,4 +1,4 @@
-
+import "./Buton.module.css"
 
 //* Eğer CSS'deki class adi kebap-case seklinde yazilmis ise
 //* module ile bu class'a erismek icin ornekte goruldugu gibi
@@ -11,7 +11,7 @@
 const Buton = ({ btn }) => {
   return (
    <div>
-
+  <h3>Button</h3>
    </div>
   )
 }
