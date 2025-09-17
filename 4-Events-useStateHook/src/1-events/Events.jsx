@@ -56,22 +56,34 @@
 //?Biz su ana kadar uygulamalarimizda Fonksiyonel Component'leri kullandik.
 //? Yaygin kullanim Fonksiyonel Component'lerdir.
 
-import React from 'react'
+import React from "react";
 
 const Events = () => {
 
-  const handleClick= () => {
-    alert("Hei")
-  }
+ let message ="Events"
 
+  const handleClick = (e) => {
+    alert("Hei");
+    console.log(e.target);
+  };
+
+  const handleChange = () => {
+    message = "State"
+
+    console.log(message)
+
+  }
 
   return (
     <div>
-      <button onClick={handleClick}>
-        Click me
-      </button>
-    </div>
-  )
-}
+   <h1>{message}</h1>
 
-export default Events
+
+      <button onClick={handleClick}>Click me</button>
+      <button onClick={() => alert("Deneme")}>Save</button>
+      <button onClick={handleChange}>Change</button>
+    </div>
+  );
+};
+
+export default Events;
