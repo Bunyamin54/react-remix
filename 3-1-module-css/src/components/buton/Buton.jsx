@@ -1,4 +1,4 @@
-import "./Buton.module.css"
+import  ButonStyle from  "./Buton.module.css"
 
 //* Eğer CSS'deki class adi kebap-case seklinde yazilmis ise
 //* module ile bu class'a erismek icin ornekte goruldugu gibi
@@ -10,8 +10,8 @@ import "./Buton.module.css"
 
 const Buton = ({ btn }) => {
   return (
-   <div>
-  <button className="btn-blue">{btn}</button>
+   <div className={ButonStyle.title}>
+  <button className= {ButonStyle.blue}>{btn}</button>
    </div>
   )
 }
