@@ -170,3 +170,5 @@ Baslangic degeri // Primitiv veya //  Non primitiv olabilir.
 import {useState} from React dan import edebilriz 
 
 - Bir Statetin degeri sadece setter ile olabilir. 
+
+- State degisrse re render eder react ile algoritma degistigini anlar differens algoritmasi - degisenler dom a basilir. 

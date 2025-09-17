@@ -36,7 +36,7 @@ const [count, setCount] = useState(0)
 
     setCount(count +1)
 
-     console.log(count)
+    //  console.log(count)
 
   }
 
@@ -49,7 +49,7 @@ const [count, setCount] = useState(0)
   <h1>Count:{count}</h1>
   <button onClick={handelInc}>INC</button>
   <button>CLR</button>
-  <button>DEC</button>
+  <button onClick={setCount(count -1 )}>DEC</button>
 
     
     </div>
