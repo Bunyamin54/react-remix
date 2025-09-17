@@ -15,7 +15,7 @@ const Card = ({lang,id,btn,img}) => {
       <h1>{lang}</h1>
       <img src={img} alt="image"/>
       <h2>{btn}</h2>
-         <Buton/>
+         <Buton btn={btn}/>
      </div>
   
   )
