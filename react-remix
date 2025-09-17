@@ -1,7 +1,13 @@
 ## React Remix 
 
+
+- Remix is an amazing React framework that vastly simplifies the process of building fullstack React web apps.
+
+- A React fremwork that simplifies the creation of fullstack web apps
+- Server-side rendered components $ enriched with backend logic
+
 - Always server-side rendered
-- No statuc sute generations build -time pre-rendering
+- No static site generations build-time pre-rendering
 - Always requires host that supports server-side code execution
 
 Routing & Page Rednergin
