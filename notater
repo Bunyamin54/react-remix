@@ -150,7 +150,21 @@ State kullanmanin 2 yontemi var
 - Class component artik cok kullanilmiyor. erisiren state this.state.count + 1. gibi this ile erisilir
 
 
+## Hooks Built-in Hooks
 
+useState
+useEffect
+useMemo
+useRef
 
+Baslangic degeri veriyoruz 
 
+const [state, setState] = useState(initialState)
 
+cosnt [counter,    setCounter]          = useState(0)
+    ilk inidisi.   settermethods.       hook
+    state degiskeni
+
+Baslangic degeri // Primitiv veya //  Non primitiv olabilir. 
+
+import {useState} from React dan import edebilriz 
