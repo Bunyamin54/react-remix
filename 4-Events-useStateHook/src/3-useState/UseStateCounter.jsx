@@ -48,8 +48,8 @@ const [count, setCount] = useState(0)
   <h2>USE STATE HOOK</h2>
   <h1>Count:{count}</h1>
   <button onClick={handelInc}>INC</button>
-  <button>CLR</button>
-  <button onClick={setCount(count -1 )}>DEC</button>
+  <button onDoubleClick={() => setCount(0)}>CLR</button>
+  <button onClick={() => setCount(count - 1 )}>DEC</button>
 
     
     </div>
