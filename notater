@@ -113,3 +113,7 @@ Child componente veri gonderme
 ## Props parentden childe bir tek yonlu bir veri akisi saglar... Nested yapi 
 
 - React componentlerin bas harfi buyuk olur
+
+Proplar tek yonludur- parentden childe gider siblingler arasi degismez, ortak parentden cekilir
+
+Yukardan asagi dogru iletimine prop drilling denir. 
