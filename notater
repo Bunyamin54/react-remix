@@ -133,4 +133,4 @@ camelCase formatinda yazilir eventler
 onClick = {handleClick}. event handler dir.
 Js alaninda function yazilir - return den once 
 
-
+function parzantezli sekilde kullanilmaz 
