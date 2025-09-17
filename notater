@@ -200,3 +200,5 @@ ancak ve ancak component veya baska bir hookun icinde cagrilabilir
 
 - ayri ayri state kullanmak yerine obje kullanilabilir
 
+## UseStateObject
+
