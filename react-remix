@@ -1,0 +1,12 @@
+## React Remix 
+
+- Always server-side rendered
+- No statuc sute generations build -time pre-rendering
+- Always requires host that supports server-side code execution
+
+Routing & Page Rednergin
+Date Fetching 
+Data Mutation
+Layouts & Styling
+Authentication
+SEO &Deployment
