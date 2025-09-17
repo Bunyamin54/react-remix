@@ -9,37 +9,37 @@
 //? React ortaminda kullanilan event'larin bilindik tarayicilarda
 //? sorunsuz calismasini saglanir.
 
-const Events = () => {
-  let message = "EVENT"
+// const Events = () => {
+//   let message = "EVENT"
 
-  const handleClick = (e) => {
-    alert("Hi")
-    console.log(e)
-    console.log(e.target)
-  }
+//   const handleClick = (e) => {
+//     alert("Hi")
+//     console.log(e)
+//     console.log(e.target)
+//   }
 
-  const handleChange = (e) => {
-    console.log(e.target)
-    message = "STATE"
-    console.log(message)
-  }
+//   const handleChange = (e) => {
+//     console.log(e.target)
+//     message = "STATE"
+//     console.log(message)
+//   }
 
-  return (
-    <div>
-      <h1>{message}</h1>
-      <button onClick={handleClick}>Click</button>
+//   return (
+//     <div>
+//       <h1>{message}</h1>
+//       <button onClick={handleClick}>Click</button>
 
-      {/* Eger bir event fonksiyonunun paremetresi olmasi gerekiyorsa
-      bu fonksiyon bir arrow fonks. tarafindan  cagrilmalidir. Aksi
-      takdirde event fonksiyonu event gerceklesmeden cagirilir */}
-      <button onClick={() => alert("Deneme")}>Save</button>
+//       {/* Eger bir event fonksiyonunun paremetresi olmasi gerekiyorsa
+//       bu fonksiyon bir arrow fonks. tarafindan  cagrilmalidir. Aksi
+//       takdirde event fonksiyonu event gerceklesmeden cagirilir */}
+//       <button onClick={() => alert("Deneme")}>Save</button>
 
-      <button onClick={handleChange}>Change</button>
-    </div>
-  )
-}
+//       <button onClick={handleChange}>Change</button>
+//     </div>
+//   )
+// }
 
-export default Events
+// export default Events
 
 //! message console'da guncellendigini ancak DOM'da guncellenmedigini gorduk.
 //* Bunun sebebi REACT'in aksi belirtilmedigi surece elementleri
@@ -55,3 +55,23 @@ export default Events
 
 //?Biz su ana kadar uygulamalarimizda Fonksiyonel Component'leri kullandik.
 //? Yaygin kullanim Fonksiyonel Component'lerdir.
+
+import React from 'react'
+
+const Events = () => {
+
+  const handleClick= () => {
+    alert("Hei")
+  }
+
+
+  return (
+    <div>
+      <button onClick={handleClick}>
+        Click me
+      </button>
+    </div>
+  )
+}
+
+export default Events
