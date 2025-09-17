@@ -180,3 +180,23 @@ import {useState} from React dan import edebilriz
 - Hooklar ust seviyede kullanilir ana seviyesinde govdesinde kullanilir
 - Custom hook da kullanabiliriz. 
 - useState, useEffect, useContext
+
+
+//* Hook Kullanim Kurallari:
+//* 1. İlk olarak import edilmeliler. import { useState } from "react";
+//* 2. Hook'lar ust seviyede kullanilmalidir. Yani Hook'lar bir
+//*    dongunun, kosul cumleciginin ve icice fonksiyonlarin icerisinde
+//*    kullanilmamalidir.
+//* 3. Hook'lar sadece React Fonksiyonel componentleri icerisinde cagrilmalidir.
+//*    Normal Javascript fonksiyonlari icerisinde cagrilmamalidir
+//*    (Custom hook'lar icerisinde bir hook cagrilabilir)
+
+Pur js icinde hook cagrilmaz
+ancak ve ancak component veya baska bir hookun icinde cagrilabilir
+
+
+## useReduser 
+- ornegin bir suru stati birlestirip kontrol etmemize izin veren system 
+
+- ayri ayri state kullanmak yerine obje kullanilabilir
+
