@@ -15,7 +15,7 @@ const Card = ({ data }) => {
             <h3>{job}</h3>
             <p>{comment}</p>
             <img src={img} alt={name} />
-            <div>
+            <div className={CardStyle.buttons}>
               <button className={CardStyle.small}>Small</button>
               <button className={CardStyle.large}>Large</button>
             </div>
