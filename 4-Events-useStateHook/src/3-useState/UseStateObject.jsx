@@ -90,7 +90,7 @@
 
 // export default UseStateObject
 
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 
 const UseStateObject = () => {
   // const [name, setName] = useState("Ahmet Can")
@@ -102,6 +102,29 @@ const UseStateObject = () => {
     age: 30,
     salary: 50000,
   });
+
+  // let toggle = false;
+
+  const [toggle,setToggle] = useState(true)
+
+  const handleToggle = () => {
+    // toggle = !toggle;
+    setToggle(!toggle)
+    
+    if (toggle) {
+      setKisi({
+        name: "Kagan Kartal",
+        age: 32,
+        salary: 100000,
+      });
+    } else {
+      setKisi({
+        name: "Ahmet Kan",
+        age: 30,
+        salary: 50000,
+      });
+    }
+  };
 
   return (
     <div>
@@ -117,8 +140,25 @@ const UseStateObject = () => {
       <button onClick={() => setKisi({ ...kisi, name: "Mehmet Kan" })}>
         Change name
       </button>
-      <button onClick={() => setKisi({...kisi, age: kisi.age +1 })}>inc age</button>
-      <button onClick={() => setKisi({...kisi, salary: kisi.salary + 10000})}>inc salary</button>
+      <button onClick={() => setKisi({ ...kisi, age: kisi.age + 1 })}>
+        inc age
+      </button>
+      <button onClick={() => setKisi({ ...kisi, salary: kisi.salary + 10000 })}>
+        inc salary
+      </button>
+      <button
+        onClick={() =>
+          setKisi({
+            name: "Kagan Kartal",
+            age: 32,
+            salary: 100000,
+          })
+        }
+      >
+        Full Change
+      </button>
+
+      <button onClick={handleToggle}>Toggel</button>
     </div>
   );
 };
