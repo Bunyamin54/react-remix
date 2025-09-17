@@ -111,3 +111,5 @@ Tek yonlu olur Parentden /  Childe dogru Veri gonderme childe veri paylasimi
 Child componente veri gonderme
 
 ## Props parentden childe bir tek yonlu bir veri akisi saglar... Nested yapi 
+
+- React componentlerin bas harfi buyuk olur
