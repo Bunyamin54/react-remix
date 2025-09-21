@@ -16,6 +16,11 @@ const Form = () => {
         email:$(email)
         password:$(password)
         `);
+    setFormData({
+      username: "",
+      email: "",
+      password: "",
+    });
   };
 
   const handleFormData = (e) => {
