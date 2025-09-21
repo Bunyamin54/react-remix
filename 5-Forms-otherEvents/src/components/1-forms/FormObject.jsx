@@ -1,30 +1,25 @@
-
 import React, { useState } from "react";
 
 const Form = () => {
+  const [formData, setFormData] = useState({
+    username: "",
+    email: "",
+    password: "",
+  });
 
-
-  const [username, setUsername] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-  const handelUserName = (e) => {
-    setUsername(e.target.value);
-  };
+  const { username, email, password } = formData; // Destr.
 
   const handleSubmit = (e) => {
-    e.preventDefault() // default davranislari kapattik 
-
+    e.preventDefault(); // Default davranislari kapattik.
     alert(`
         username:$(username)
         email:$(email)
         password:$(password)
-        
-        
         `);
-    setEmail("");
-    setPassword("");
-    setUsername("");
+  };
+
+  const handleFormData = (e) => {
+    setFormData({ ...formData, [e.target.Id]: e.target.value });
   };
 
   return (
@@ -33,29 +28,27 @@ const Form = () => {
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="username" className="form-label">
-            Hello {username}
+            Hello{username}
           </label>
           <input
             type="text"
             className="form-control"
             id="username"
             aria-describedby="emailHelp"
-            // onCahnge eventi inputun degeri degistiginde tetiklenir. bizde yazdigimzi eventhandler ile statimizi guncelleriz
-            onChange={handelUserName}
-            value={username} // value propu inputlara baslangic degeri vermemizi saglar.
+            onChange={handleFormData}
           />
         </div>
+
         <div className="mb-3">
           <label htmlFor="email" className="form-label">
-            Email address : <span className="text-danger">{email}</span>
+            Email address : <span className="text-danger"></span>
           </label>
           <input
             type="email"
             className="form-control"
             id="email"
             aria-describedby="emailHelp"
-            onChange={(e) => setEmail(e.target.value)}
-            value={email}
+            onChange={handleFormData}
           />
         </div>
         <div className="mb-3">
@@ -66,8 +59,7 @@ const Form = () => {
             type="password"
             className="form-control"
             id="password"
-            onChange={(e) => setPassword(e.target.value)}
-            value={password}
+            onChange={handleFormData}
           />
         </div>
         <div className="text-center">
