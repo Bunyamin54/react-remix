@@ -91,10 +91,25 @@ const Form = () => {
     setUsername(e.target.value);
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault() // default davranislari kapattik 
+
+    alert(`
+        username:$(username)
+        email:$(email)
+        password:$(password)
+        
+        
+        `);
+    setEmail("");
+    setPassword("");
+    setUsername("");
+  };
+
   return (
     <div className="container mt-4">
       <h2 className="text-center text-success">Forms in React</h2>
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="username" className="form-label">
             Hello {username}
@@ -106,7 +121,7 @@ const Form = () => {
             aria-describedby="emailHelp"
             // onCahnge eventi inputun degeri degistiginde tetiklenir. bizde yazdigimzi eventhandler ile statimizi guncelleriz
             onChange={handelUserName}
-            value={username} // value propu inputlara baslangic degeri vermemizi saglar..
+            value={username} // value propu inputlara baslangic degeri vermemizi saglar.
           />
         </div>
         <div className="mb-3">
@@ -119,6 +134,7 @@ const Form = () => {
             id="email"
             aria-describedby="emailHelp"
             onChange={(e) => setEmail(e.target.value)}
+            value={email}
           />
         </div>
         <div className="mb-3">
@@ -130,6 +146,7 @@ const Form = () => {
             className="form-control"
             id="password"
             onChange={(e) => setPassword(e.target.value)}
+            value={password}
           />
         </div>
         <div className="text-center">

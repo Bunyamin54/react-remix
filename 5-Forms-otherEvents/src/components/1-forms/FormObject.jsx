@@ -1,41 +1,35 @@
-import { useState } from "react"
 
-const FormObject = () => {
-  const [formData, setFormData] = useState({
-    username: "",
-    email: "",
-    password: "",
-  })
+import React, { useState } from "react";
 
-  //? Destr.
-  const { username, email, password } = formData
+const Form = () => {
+
+
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handelUserName = (e) => {
+    setUsername(e.target.value);
+  };
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault() // default davranislari kapattik 
 
     alert(`
-      username:${username}
-      email:${email}
-      password:${password}
-    `)
-
-    setFormData({
-      username: "",
-      email: "",
-      password: "",
-    })
-  }
-
-  const handleFormData = (e) => {
-    // console.log(e.target.value)
-    // console.log(e.target.name)
-    // console.log(e.target.id)
-    setFormData({ ...formData, [e.target.name]: e.target.value })
-  }
+        username:$(username)
+        email:$(email)
+        password:$(password)
+        
+        
+        `);
+    setEmail("");
+    setPassword("");
+    setUsername("");
+  };
 
   return (
     <div className="container mt-4">
-      <h2 className="text-center text-success">FORM OBJECT IN REACT</h2>
+      <h2 className="text-center text-success">Forms Object in React</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="username" className="form-label">
@@ -46,25 +40,22 @@ const FormObject = () => {
             className="form-control"
             id="username"
             aria-describedby="emailHelp"
-            //? OnChange event'ı input degeri her degistiginde tetiklenir. Biz de yazdıgımız event handler araciligi ile State'i guncelleyebilmis oluruz.
-            onChange={handleFormData}
-            value={username}
-            name="username"
+            // onCahnge eventi inputun degeri degistiginde tetiklenir. bizde yazdigimzi eventhandler ile statimizi guncelleriz
+            onChange={handelUserName}
+            value={username} // value propu inputlara baslangic degeri vermemizi saglar.
           />
         </div>
-
         <div className="mb-3">
           <label htmlFor="email" className="form-label">
-            Email address: <span className="text-danger">{email}</span>
+            Email address : <span className="text-danger">{email}</span>
           </label>
           <input
             type="email"
             className="form-control"
             id="email"
             aria-describedby="emailHelp"
-            onChange={handleFormData}
+            onChange={(e) => setEmail(e.target.value)}
             value={email}
-            name="email"
           />
         </div>
         <div className="mb-3">
@@ -75,12 +66,10 @@ const FormObject = () => {
             type="password"
             className="form-control"
             id="password"
-            onChange={handleFormData}
+            onChange={(e) => setPassword(e.target.value)}
             value={password}
-            name="password"
           />
         </div>
-
         <div className="text-center">
           <button type="submit" className="btn btn-success">
             Submit
@@ -88,7 +77,7 @@ const FormObject = () => {
         </div>
       </form>
     </div>
-  )
-}
+  );
+};
 
-export default FormObject
+export default Form;
