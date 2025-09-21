@@ -62,14 +62,34 @@
 
 // export default KeyboardClipboard
 
-import React from 'react'
+import React, { useState } from "react";
 
 const KeyboardClipboard = () => {
-  return (
-    <div className='container mt-4'>
-      <h2 className='text-center text-danger'>Keyboard-Clipboard</h2>
-      </div>
-  )
-}
+  const [content, setContent] = useState("");
 
-export default KeyboardClipboard
+  return (
+    <div className="container mt-4">
+      <h2 className="text-center text-danger">Keyboard-Clipboard</h2>
+
+      <input
+        type="text"
+        className="form-control"
+        onChange={(e) => {
+          // e.target.value= e.target.value.toLocaleUpperCase()
+
+          setContent(e.target.value.toLocaleUpperCase());
+         
+        }}
+        onKeyDown={(e) => console.log(e.keyCode)}
+        value={content}
+      />
+
+      <div className="mt-4">
+        <h3>Copied-Content</h3>
+        <p>{content.toLocaleLowerCase()}</p>
+      </div>
+    </div>
+  );
+};
+
+export default KeyboardClipboard;
