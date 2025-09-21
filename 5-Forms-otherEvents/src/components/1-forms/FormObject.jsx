@@ -24,7 +24,7 @@ const Form = () => {
   };
 
   const handleFormData = (e) => {
-    setFormData({ ...formData, [e.target.Id]: e.target.value });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   return (
@@ -39,8 +39,10 @@ const Form = () => {
             type="text"
             className="form-control"
             id="username"
+            name="username"
             aria-describedby="emailHelp"
             onChange={handleFormData}
+            value={username}
           />
         </div>
 
@@ -52,8 +54,10 @@ const Form = () => {
             type="email"
             className="form-control"
             id="email"
+            name="email"
             aria-describedby="emailHelp"
             onChange={handleFormData}
+            value={email}
           />
         </div>
         <div className="mb-3">
@@ -64,7 +68,9 @@ const Form = () => {
             type="password"
             className="form-control"
             id="password"
+            name="password"
             onChange={handleFormData}
+            value={password}
           />
         </div>
         <div className="text-center">
