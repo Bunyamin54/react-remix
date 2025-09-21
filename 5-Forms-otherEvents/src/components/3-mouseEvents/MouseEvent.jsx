@@ -4,7 +4,14 @@ const MouseEvent = () => {
   
 const [viseble, setViseble] = useState()
     
+const [courdX, setCourdX] = useState()
+const [courdY, setCourdY] = useState()
  
+const handleMoved =(e) => {
+  setCourdX(e.pageX)
+  setCourdY(e.pageY)
+
+}
 
 
   return (
@@ -34,13 +41,14 @@ const [viseble, setViseble] = useState()
       <div
         id="todo-3"
         className="bg-success text-light w-50 p-4 my-4"
+        onMouseMove={handleMoved}
     
       >
         todo item 3
       </div>
 
       <p>
-    
+       X:{courdX} and Y:{courdY}
       </p>
     </div>
   )
