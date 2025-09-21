@@ -15,7 +15,7 @@ const [viseble, setViseble] = useState()
         id="todo-1"
         className="bg-success text-light w-50 p-4"
         onMouseEnter={()=> setViseble(true)}
-        onMouseLeave={() => setViseble()}
+        onMouseLeave={() => setViseble(false)}
       
       >
         todo item 1
