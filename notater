@@ -203,3 +203,5 @@ ancak ve ancak component veya baska bir hookun icinde cagrilabilir
 ## UseStateObject
 
 ... spread operatoru ile obje icerisini acariz...
+
+- Bootstrap den aldigimiz form icerigini html to jsx e ceviren toollar ile cevirebiliriz hizlica 
