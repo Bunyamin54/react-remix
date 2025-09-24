@@ -67,11 +67,8 @@ const User = () => {
   console.log(userData);
 
   useEffect(() => {
-    fetch("https://randomuser.me/api")
-      .then((res) => res.json())
-      .then((data) => setUserData(data.results[0]))
-      .catch((err) => console.log(err));
-  
+   
+    getUser()
   }, [])
   
 
