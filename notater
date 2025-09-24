@@ -367,3 +367,5 @@ const UseEffectHook = () => {
 
   oldugunda state guncellendigi icin didMount + didUpdate de calisir. 
   return oldugu zamanda otamatik olarak willUnmount calisir. 
+
+  # Fetch() icerisine url yazilir 
