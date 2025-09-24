@@ -77,9 +77,12 @@ const User = () => {
 
        {/* Optional Chaining */}
 
-      <img src={userData?.picture?.large} alt="" />. 
+      <img src={userData?.picture?.large} alt="" className="rounded-circle"/>. 
       <h4>Hi, My Name is</h4>
-      <h1>Name</h1>
+      <h1>
+        {userData?.name?.first} {userData?.name?.last}
+
+      </h1>
       <h3>Email</h3>
       <h4>dob</h4>
       <h5>phone</h5>
