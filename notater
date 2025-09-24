@@ -372,3 +372,19 @@ const UseEffectHook = () => {
 
 
 ## Axios
+
+Crud - islemleri 
+
+GET - tum bilgileri almak istersen
+put. - tum veriler degisir put isteginde 
+patch
+post silme islemi
+
+postman gibi ortamlarda keylere tirnk konulur ""
+
+ {
+        
+        "title": "Java Script",
+        "description": "Stylesheet"
+    }
+
