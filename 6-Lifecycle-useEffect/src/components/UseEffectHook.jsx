@@ -117,11 +117,61 @@
 // export default UseEffectHook
 
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const UseEffectHook = () => {
 
   const [count, setCount] = useState(0)
+
+  // 1-  didMount
+
+// useEffect(() => {
+
+//   // fetch ,async-await , localstorage, setTimeout
+// console.log("componentDidMount")
+//   setTimeout(() => {
+//     alert("Data fetched")
+//   }, 3000)
+
+
+// }, []) // Dependecy array bos 
+
+
+ // 2- didUpdate  - state kullandigimiz icin --- 
+
+
+// useEffect(() => {
+
+//   // fetch ,async-await , localstorage, setTimeout
+// console.log("componentDidMount + componentDidUpdate")
+//   setTimeout(() => {
+//     alert("Data fetched")
+//   }, 3000)
+
+
+// }, [count]) // count stati her degistigi yukardaki mount+ updated calisir , ama dikkat etmek lazm sonsuz donguye girebilir, 
+
+
+  // 3- unMount   return kismi willUnmount kismini kullanacaigmiz kisim oluyor
+
+const fetchData =() => {
+
+  console.log("Data Fetch Start")
+}
+
+useEffect(() => {
+
+  const timer = setInterval(fetchData, 2000)
+
+  return () => {
+    clearInterval(timer)
+    console.log("componentWillUnmount")
+   
+  }
+}, [])
+
+
+
 
   const handleInc = () => {
 
