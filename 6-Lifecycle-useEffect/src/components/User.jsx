@@ -50,44 +50,46 @@
 
 // export default User
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
- // clasic await 
+// clasic await
 
 const User = () => {
+  const [userData, setUserData] = useState("");
 
-  const [userData, setUserData] = useState("")
+  const getUser = () => {
+    fetch("https://randomuser.me/api")
+      .then((res) => res.json())
+      .then((data) => setUserData(data.results[0]))
+      .catch((err) => console.log(err));
+  };
 
-  const getUser =() =>{
+  console.log(userData);
 
-  fetch("https://randomuser.me/api")
-
-   .then((res) => res.json())
-   .then((data) => setUserData(data.results[0]))
-   .catch((err) => console.log(err));
-
-
-  }
-
-
-    console.log(userData)
+  useEffect(() => {
+    fetch("https://randomuser.me/api")
+      .then((res) => res.json())
+      .then((data) => setUserData(data.results[0]))
+      .catch((err) => console.log(err));
+  
+  }, [])
+  
 
   return (
     <div>
-
-       {/* Optional Chaining */}
-
-      <img src={userData?.picture?.large} alt="" className="rounded-circle"/>. 
+      {/* Optional Chaining */}
+      <img src={userData?.picture?.large} alt="" className="rounded-circle" />.
       <h4>Hi, My Name is</h4>
       <h1>
         {userData?.name?.first} {userData?.name?.last}
-
       </h1>
-      <h3>Email</h3>
-      <h4>dob</h4>
-      <h5>phone</h5>
-      <h6>adress</h6>
-      <button className="btn btn-success text-danger" onClick={getUser}>Get Random User</button>
+      <h3>{userData?.email}</h3>
+      <h4>{new Date(userData?.dob?.date).toLocaleDateString("no-NO")}</h4>
+      <h5>{userData?.phone}</h5>
+      <h6>{userData?.location?.city}</h6>
+      <button className="btn btn-success text-danger" onClick={getUser}>
+        Get Random User
+      </button>
     </div>
   );
 };
