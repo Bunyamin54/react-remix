@@ -369,3 +369,6 @@ const UseEffectHook = () => {
   return oldugu zamanda otamatik olarak willUnmount calisir. 
 
   # Fetch() icerisine url yazilir 
+
+
+## Axios
