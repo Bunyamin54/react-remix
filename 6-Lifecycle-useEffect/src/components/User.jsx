@@ -67,8 +67,16 @@ const User = () => {
   console.log(userData);
 
   useEffect(() => {
+
+     // didMount
+    const timer = setInterval(getUser, 5000)
    
     getUser()
+
+     // unMount 
+    return ()=> {
+      clearInterval(timer)
+    }
   }, [])
   
 
