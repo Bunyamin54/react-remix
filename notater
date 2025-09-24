@@ -207,3 +207,163 @@ ancak ve ancak component veya baska bir hookun icinde cagrilabilir
 - Bootstrap den aldigimiz form icerigini html to jsx e ceviren toollar ile cevirebiliriz hizlica 
 
 - Obje formatina cevirirsek tek bir yerden kontrol edebiliyoruz. 
+
+## UseEffect 
+
+- Constructur - yapici funksiyon - 
+this. ile ulasilir 
+
+- Class component nasil olusturulur, React componentden turetilmsitiri 
+
+- Yapici kurucu funksiyon  constructur baslangic degerini icinde alirlar ve this. ile erisilirler
+
+- Class componenetlerde render() var  doma basilmaisni sagliyor. 
+
+- setState methodu ile statei guncelliyoruz
+
+//?                 LIFECYCLE METOTLARI
+//?      https://reactjs.org/docs/react-component.html
+//?=============================================================
+
+//* Lifecycle metotlari componentlerin DOM'da varoldugu sure boyunca
+//* uzerinde islem yapmamizi imkan saglayan ozel React metotlaridir.
+//* Ornegin bir component olusturuldugunda, DOM'a basildiginda,
+//* guncellendiginde veya DOM'dan kaldirildiginda bir seyler yapmak icin
+//* lifecycle metotlari kullanilabilir.
+//* En bilindik lifecycle metodu render() metodudur
+
+//* Bir component'in olusturulmasi (constructor),
+//* Bir componentin DOM agacina eklenmesinin hemen sonrasi(componentDidMount)
+//* Bir component'in DOM'a basilmasi (render)
+//* (Optional) Bir componentin guncellenmesinin hemen sonrasi (componentDidUpdate)
+//* Bir component'in DOM agacindan kaldirilmasi sonrasi(componentWillUnmount)
+
+# componentDidMount() {
+    ilk render sonrasi calisir. 
+    kodlari fetch() eder 
+    doma basildiktan hemen sonrasi veri cekmek icin kullanilir
+
+}
+
+Clas componentlerde siralamasi 
+- constructor(). kurulmasi anne karni buyumeye basla
+- render().  --  doma tree ya basilmasi   cocugun buyumesi
+- componentDidMount. -bir islem yapma kimlik karti cikartma / kulagina ezan okuma birkez yapildiginda 
+   ilk renderdan hemen sonra claisir
+   # Bir kereye mahsus seyler icin kullanilir ornek hava durumu network istegi
+   # timer / interval baslatma ile ilgili islemler icin temel felsefesi budur. 
+
+# Lifecycel methodlari aslinda developerlarin islerini kolaylastirmak icin gelistirmis methodlar yontemler
+
+mounting - dogum. componentDidMount() 
+updating - yasam.  componentDidUpdate()
+unmounting - olum.  componentWillUnmout()
+
+# componentDidUpdate(). state guncellendikten sonra kullanilir 
+ - bir componentin state , propu degisirse guncellenme olursa sepet komponenti kullanic yen ibir urun ekledi , ilk render haricindeki sonraki her render dan sonra react bunu cagirir. 
+
+ - cocuk dogduktan sonra 1 yasina girdi , dogum gunu partisi, her yil her yas guncellemesinden sonra yapilir. 
+
+ - react ortaminda hava sicaklik verilerin getirdik , herbir saatte bir veriyi cekme, guncelleme. dolar/euro parimetresi ornegin yukselme olursa satis / dusus varsa al
+ -kismen baglantili 
+
+ ##  componentWillUnmout
+
+  - sepeti kaldir
+  - ekrandan kaldir
+  - dom tree den kaldir
+
+  - sonraki temizlik islemler icin kullanilir .
+  - defin islemlerin yapildigi yerdir. 
+  - nettwork isteklerinin iptal edilmesi gibi 
+
+# Siralama
+once constructor calisir 
+sonra render claisir 
+
+constructor run
+render run
+componentDidMount
+
+==============================================
+                USEEFFECT HOOK
+// //?===============================================
+// //! UseEffect Hook'u fonksiyonel componenler'te yan etkileri
+// //! (side effect) gerceklestirmek icin kullanilir.
+// //! componentDidMount,componentDidUpdate,ve componentWillUnmount
+// //! metotlarinin bir birlesimi gibi dusunulebilir.
+
+tek bir hook ile 3 fakrli islemei yapabiliyoruz . 
+
+- didMount 
+- didUpdate
+- 
+//! useEffect(() => {
+//*   /* ComponentDidMount code */
+//*      Kodlar
+//! }, []);
+
+//! useEffect(() => {
+//*   */ ComponentDidMount + componentDidUpdate code */
+//! }, [state1, state2]);
+
+//! useEffect(() => {
+//?   /* ComponentDidMount code */
+//!   return () => {
+//*     //* componentWillUnmount code */
+//!   };
+//! }, []);
+
+//! useEffect(() => {
+//*   //* componentDidMount code + componentDidUpdate code */
+
+//!   return () => {
+//*     //* componentWillUnmount code */
+//!   };
+//! }, [state1, state2]); //? Dependency Array
+
+//   useEffect(() => {
+//     //? componentDidMount (Dependency Array bos ise)
+//     //? componentDidMount + componentDidUpdate (Dependency array bos degilse)
+//     //? Dependecny array'Deki state her degistiginde veya ilk render sonrasi bu kod blogu tekrardan calistirilir.
+
+//     return () => {
+//       //? Cleanup function (componentWillUnmount)
+//     }
+//   }, [count]) //? Dependency Array
+
+const UseEffectHook = () => {
+  const [count, setCount] = useState(0)
+
+  //!   ComponentDidMount
+  //   useEffect(() => {
+  //     //! fetch, async-await ,localStorage, setTimeout, setInterval();
+  //     console.log("componentDidMount")
+  //     setTimeout(() => {
+  //       alert("Data fetched")
+  //     }, 3000)
+  //   }, []) //? Dependecny array bos
+
+  //!   ComponentDidUpdate
+  //   useEffect(() => {
+  //     console.log("componentDidMount + componentDidUpdate")
+  //     setTimeout(() => {
+  //       alert("Data fetched")
+  //     }, 3000)
+  //   }, [count]) //? count state'i her degistiginde yukaridaki mount+update kismi calisitirilir.
+
+
+# useEffect hooku
+
+  useEffect(() => ){
+
+    - componentDidMount + componentDidUpdate
+
+    return () => {
+   
+    - componentWillUnmount 
+    }
+  }, [state,state2] // dependecy array bagimlilik arrayi   
+
+  oldugunda state guncellendigi icin didMount + didUpdate de calisir. 
+  return oldugu zamanda otamatik olarak willUnmount calisir. 
