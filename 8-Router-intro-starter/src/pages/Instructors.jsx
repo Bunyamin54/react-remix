@@ -9,9 +9,9 @@ const Instructors = () => {
         {/* <Link to="/instructors/1">Instructor-1</Link>   */}
 
         {/* relative path / kullnamadigimizda  */}
-        <Link to="1">Instructor-1</Link>
-        <Link to="2">Instructor-2</Link>
-        <Link to="3">Instructor-3</Link>
+        <Link to="1" state={{name:"Felix"}}>Instructor-1</Link>
+        <Link to="2" state={{name:"Bunyamin"}}>Instructor-2</Link>
+        <Link to="3" state={{name:"Anthony"}}>Instructor-3</Link>
       </div>
     </div>
   );
