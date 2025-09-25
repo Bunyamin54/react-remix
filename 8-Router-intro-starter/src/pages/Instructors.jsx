@@ -5,8 +5,8 @@ const Instructors = () => {
     <div className="p-3">
       <h1>Instructors</h1>
       <div className="d-flex flex-column">
-        {/* abdsolute path kadikoydeki rihtima git demek bu */}
-        {/* <Link to="/instructor/1">Instructor-1</Link>  */}
+        {/* absolute path kadikoydeki rihtima git demek bu */}
+        {/* <Link to="/instructors/1">Instructor-1</Link>   */}
 
         {/* relative path / kullnamadigimizda  */}
         <Link to="1">Instructor-1</Link>
