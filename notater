@@ -32,10 +32,9 @@ Only the parts that actually changed are updated in the real DOM.
 This makes UI updates much faster because React avoids updating the entire DOM — it only updates what is necessary.
 React does not specify exactly how often it updates; it depends on changes in the application. Since it is open source, the implementation details may evolve.
 
-
 ## Who uses React ?
 
-Netflix 
+Netflix
 Airbnb
 Facebook
 Uber
@@ -44,21 +43,20 @@ Tweeter
 Pinterest
 Instegram
 
-In Tr who uses? 
+In Tr who uses?
 
-Trednyol 
-Hepsiburada 
-
+Trednyol
+Hepsiburada
 
 ## React Starter
 
 yarn create react-app my-app
-yarn start 
+yarn start
 
 ..cd my-app
-code .  // Direkt til Visual code
+code . // Direkt til Visual code
 
-## If you want to add some packeges 
+## If you want to add some packeges
 
 yarn add axios
 yarn add bootstrap axios // to packages
@@ -67,88 +65,87 @@ yarn start
 
 ## Projeyi derleme
 
-yarn install 
+yarn install
 yarn start
 yarn add tailwind react router. (birden fazla paket eklemek istersek)
-yarn build -- derleme bundel islemi icin 
-yarn test. - dosya adi 
+yarn build -- derleme bundel islemi icin
+yarn test. - dosya adi
 
-## Component 
+## Component
 
-Componentler buyuk harfle baslar 
+Componentler buyuk harfle baslar
 
 Component icerisnde js yi html i barindiran ve reacti barindiran bir yapi , Export ile disariye acilmis ve App js icinde cagrilmis bir yapi import ile
 
 Self closing olarak kapanir <APP/> seklinde
 
-SPA = singel page application demektir tum yapilar en sonunda onun altinda cagrilir 
+SPA = singel page application demektir tum yapilar en sonunda onun altinda cagrilir
 
-
-Index,js baba gibi en sonunda cikis noktasi 
+Index,js baba gibi en sonunda cikis noktasi
 App,js Anne gibi derleyip toparlayan birlestiriyor childirinlari .
 
-Bundel >>> dosyalarin tek bir dosyada toplanmasi anlamina geliyr  webpack , vit, percel  gibi araclar bundler dir. 
+Bundel >>> dosyalarin tek bir dosyada toplanmasi anlamina geliyr webpack , vit, percel gibi araclar bundler dir.
 
-Export & Import mantigi ile calisir React 
+Export & Import mantigi ile calisir React
 
-HTML- markup demektir. JSX  JS+ XML = JSX 
+HTML- markup demektir. JSX JS+ XML = JSX
 
 <> <>= Fragment react da demektir
 
 ES/ ile rafce ile kisaltamalr componentler hizlica otamatik olusturlur
 
-## inline css key value seklinde   {/* inline css key- value notasyon olraka camelCase */}
+## inline css key value seklinde {/_ inline css key- value notasyon olraka camelCase _/}
 
 1- style={{color: "red", backgroundColor: "blue" }}
 
-2- property olarak da kullanabilirz  style={headerStyle}>
+2- property olarak da kullanabilirz style={headerStyle}>
 
+# Props - parametre demektir
 
-# Props - parametre demektir 
-
-Tek yonlu olur Parentden /  Childe dogru Veri gonderme childe veri paylasimi
+Tek yonlu olur Parentden / Childe dogru Veri gonderme childe veri paylasimi
 
 Child componente veri gonderme
 
-## Props parentden childe bir tek yonlu bir veri akisi saglar... Nested yapi 
+## Props parentden childe bir tek yonlu bir veri akisi saglar... Nested yapi
 
 - React componentlerin bas harfi buyuk olur
 
 Proplar tek yonludur- parentden childe gider siblingler arasi degismez, ortak parentden cekilir
 
-Yukardan asagi dogru iletimine prop drilling denir. 
+Yukardan asagi dogru iletimine prop drilling denir.
 
 - best praksis closor isimleri kucuk harfle
-- css dosyalari dogrudan import edilebiliyor. webpackden dolayi 
-- for each return ozellig yoktur o yuzden cogu zaman biz map kullaniriz. 
-{key} propu inherit bir props reactin icinde heryerde kullanilabilir. 
+- css dosyalari dogrudan import edilebiliyor. webpackden dolayi
+- for each return ozellig yoktur o yuzden cogu zaman biz map kullaniriz.
+  {key} propu inherit bir props reactin icinde heryerde kullanilabilir.
 
-<> = Wrapper 
+<> = Wrapper
 
-- Birden fazla statement kullaniclaksa o zaman fonksiyonun suslu {} ve return keywordu kullnamasi gerekir. 
+- Birden fazla statement kullaniclaksa o zaman fonksiyonun suslu {} ve return keywordu kullnamasi gerekir.
 
-## useState hook Events in React 
-camelCase formatinda yazilir eventler 
+## useState hook Events in React
+
+camelCase formatinda yazilir eventler
 
 onClick = {handleClick}. event handler dir.
-Js alaninda function yazilir - return den once 
+Js alaninda function yazilir - return den once
 
-function parzantezli sekilde kullanilmaz 
+function parzantezli sekilde kullanilmaz
 
-- Reactin degismesi gereken seyleri State oluyor baslangicte hersey statik oluyor State ler ile Doma baislmasini yeniden basilmaisni Stateler ile saglariz. 
+- Reactin degismesi gereken seyleri State oluyor baslangicte hersey statik oluyor State ler ile Doma baislmasini yeniden basilmaisni Stateler ile saglariz.
 
-- Yeniden render edilmesini saglayan 2 sey 1-prop 2-state 
-- State degisirse component render olur prop degisirse component render olur. 
+- Yeniden render edilmesini saglayan 2 sey 1-prop 2-state
+- State degisirse component render olur prop degisirse component render olur.
 
 - Aksi belirtilmedigi surece react statik olarak kabul eder herseyi manipulasyonlari azaltmak icin.
 
-- State birseyleri interaktif sekilde basilmasini saglamak icin State kullaniriz. Dom da basilan interaktif olan nesneler icin State kullaniriz. 
+- State birseyleri interaktif sekilde basilmasini saglamak icin State kullaniriz. Dom da basilan interaktif olan nesneler icin State kullaniriz.
 
 ## State
 
-State kullanmanin 2 yontemi var 
-- Class component artik cok kullanilmiyor. erisiren state this.state.count + 1. gibi this ile erisilir
+State kullanmanin 2 yontemi var
 
+- Class component artik cok kullanilmiyor. erisiren state this.state.count + 1. gibi this ile erisilir
 
 ## Hooks Built-in Hooks
 
@@ -157,46 +154,45 @@ useEffect
 useMemo
 useRef
 
-Baslangic degeri veriyoruz 
+Baslangic degeri veriyoruz
 
 const [state, setState] = useState(initialState)
 
-cosnt [counter,    setCounter]          = useState(0)
-    ilk inidisi.   settermethods.       hook
-    state degiskeni
+cosnt [counter, setCounter] = useState(0)
+ilk inidisi. settermethods. hook
+state degiskeni
 
-Baslangic degeri // Primitiv veya //  Non primitiv olabilir. 
+Baslangic degeri // Primitiv veya // Non primitiv olabilir.
 
-import {useState} from React dan import edebilriz 
+import {useState} from React dan import edebilriz
 
-- Bir Statetin degeri sadece setter ile olabilir. 
+- Bir Statetin degeri sadece setter ile olabilir.
 
-- State degisrse re render eder react ile algoritma degistigini anlar differens algoritmasi - degisenler dom a basilir. 
+- State degisrse re render eder react ile algoritma degistigini anlar differens algoritmasi - degisenler dom a basilir.
 
-- //     {/* Eger setCount metodunu callback ile yazmazsak bu metot ilk acilistan itibaren doğrudan cagirilmis olur. Bu durumda da count state'inin gunceller. State guncellendigi icinde component re-render olur. Re-render ise yeninden setCount araciligi state'in guncellenmesine yol acar ve sonsuz donguye girer */}
+- // {/_ Eger setCount metodunu callback ile yazmazsak bu metot ilk acilistan itibaren doğrudan cagirilmis olur. Bu durumda da count state'inin gunceller. State guncellendigi icinde component re-render olur. Re-render ise yeninden setCount araciligi state'in guncellenmesine yol acar ve sonsuz donguye girer _/}
 
-- Hooklar use ile baslar 
+- Hooklar use ile baslar
 - React componenti icinde kullanilir hooklar
 - Hooklar ust seviyede kullanilir ana seviyesinde govdesinde kullanilir
-- Custom hook da kullanabiliriz. 
+- Custom hook da kullanabiliriz.
 - useState, useEffect, useContext
 
-
-//* Hook Kullanim Kurallari:
-//* 1. İlk olarak import edilmeliler. import { useState } from "react";
-//* 2. Hook'lar ust seviyede kullanilmalidir. Yani Hook'lar bir
-//*    dongunun, kosul cumleciginin ve icice fonksiyonlarin icerisinde
-//*    kullanilmamalidir.
-//* 3. Hook'lar sadece React Fonksiyonel componentleri icerisinde cagrilmalidir.
-//*    Normal Javascript fonksiyonlari icerisinde cagrilmamalidir
-//*    (Custom hook'lar icerisinde bir hook cagrilabilir)
+//_ Hook Kullanim Kurallari:
+//_ 1. İlk olarak import edilmeliler. import { useState } from "react";
+//_ 2. Hook'lar ust seviyede kullanilmalidir. Yani Hook'lar bir
+//_ dongunun, kosul cumleciginin ve icice fonksiyonlarin icerisinde
+//_ kullanilmamalidir.
+//_ 3. Hook'lar sadece React Fonksiyonel componentleri icerisinde cagrilmalidir.
+//_ Normal Javascript fonksiyonlari icerisinde cagrilmamalidir
+//_ (Custom hook'lar icerisinde bir hook cagrilabilir)
 
 Pur js icinde hook cagrilmaz
 ancak ve ancak component veya baska bir hookun icinde cagrilabilir
 
+## useReduser
 
-## useReduser 
-- ornegin bir suru stati birlestirip kontrol etmemize izin veren system 
+- ornegin bir suru stati birlestirip kontrol etmemize izin veren system
 
 - ayri ayri state kullanmak yerine obje kullanilabilir
 
@@ -204,215 +200,223 @@ ancak ve ancak component veya baska bir hookun icinde cagrilabilir
 
 ... spread operatoru ile obje icerisini acariz...
 
-- Bootstrap den aldigimiz form icerigini html to jsx e ceviren toollar ile cevirebiliriz hizlica 
+- Bootstrap den aldigimiz form icerigini html to jsx e ceviren toollar ile cevirebiliriz hizlica
 
-- Obje formatina cevirirsek tek bir yerden kontrol edebiliyoruz. 
+- Obje formatina cevirirsek tek bir yerden kontrol edebiliyoruz.
 
-## UseEffect 
+## UseEffect
 
-- Constructur - yapici funksiyon - 
-this. ile ulasilir 
+- Constructur - yapici funksiyon -
+  this. ile ulasilir
 
-- Class component nasil olusturulur, React componentden turetilmsitiri 
+- Class component nasil olusturulur, React componentden turetilmsitiri
 
-- Yapici kurucu funksiyon  constructur baslangic degerini icinde alirlar ve this. ile erisilirler
+- Yapici kurucu funksiyon constructur baslangic degerini icinde alirlar ve this. ile erisilirler
 
-- Class componenetlerde render() var  doma basilmaisni sagliyor. 
+- Class componenetlerde render() var doma basilmaisni sagliyor.
 
 - setState methodu ile statei guncelliyoruz
 
-//?                 LIFECYCLE METOTLARI
-//?      https://reactjs.org/docs/react-component.html
+//? LIFECYCLE METOTLARI
+//? https://reactjs.org/docs/react-component.html
 //?=============================================================
 
-//* Lifecycle metotlari componentlerin DOM'da varoldugu sure boyunca
-//* uzerinde islem yapmamizi imkan saglayan ozel React metotlaridir.
-//* Ornegin bir component olusturuldugunda, DOM'a basildiginda,
-//* guncellendiginde veya DOM'dan kaldirildiginda bir seyler yapmak icin
-//* lifecycle metotlari kullanilabilir.
-//* En bilindik lifecycle metodu render() metodudur
+//_ Lifecycle metotlari componentlerin DOM'da varoldugu sure boyunca
+//_ uzerinde islem yapmamizi imkan saglayan ozel React metotlaridir.
+//_ Ornegin bir component olusturuldugunda, DOM'a basildiginda,
+//_ guncellendiginde veya DOM'dan kaldirildiginda bir seyler yapmak icin
+//_ lifecycle metotlari kullanilabilir.
+//_ En bilindik lifecycle metodu render() metodudur
 
-//* Bir component'in olusturulmasi (constructor),
-//* Bir componentin DOM agacina eklenmesinin hemen sonrasi(componentDidMount)
-//* Bir component'in DOM'a basilmasi (render)
-//* (Optional) Bir componentin guncellenmesinin hemen sonrasi (componentDidUpdate)
-//* Bir component'in DOM agacindan kaldirilmasi sonrasi(componentWillUnmount)
+//_ Bir component'in olusturulmasi (constructor),
+//_ Bir componentin DOM agacina eklenmesinin hemen sonrasi(componentDidMount)
+//_ Bir component'in DOM'a basilmasi (render)
+//_ (Optional) Bir componentin guncellenmesinin hemen sonrasi (componentDidUpdate)
+//\* Bir component'in DOM agacindan kaldirilmasi sonrasi(componentWillUnmount)
 
 # componentDidMount() {
-    ilk render sonrasi calisir. 
-    kodlari fetch() eder 
+
+    ilk render sonrasi calisir.
+    kodlari fetch() eder
     doma basildiktan hemen sonrasi veri cekmek icin kullanilir
 
 }
 
-Clas componentlerde siralamasi 
+Clas componentlerde siralamasi
+
 - constructor(). kurulmasi anne karni buyumeye basla
-- render().  --  doma tree ya basilmasi   cocugun buyumesi
-- componentDidMount. -bir islem yapma kimlik karti cikartma / kulagina ezan okuma birkez yapildiginda 
-   ilk renderdan hemen sonra claisir
-   # Bir kereye mahsus seyler icin kullanilir ornek hava durumu network istegi
-   # timer / interval baslatma ile ilgili islemler icin temel felsefesi budur. 
+- render(). -- doma tree ya basilmasi cocugun buyumesi
+- componentDidMount. -bir islem yapma kimlik karti cikartma / kulagina ezan okuma birkez yapildiginda
+  ilk renderdan hemen sonra claisir
+  # Bir kereye mahsus seyler icin kullanilir ornek hava durumu network istegi
+  # timer / interval baslatma ile ilgili islemler icin temel felsefesi budur.
 
 # Lifecycel methodlari aslinda developerlarin islerini kolaylastirmak icin gelistirmis methodlar yontemler
 
-mounting - dogum. componentDidMount() 
-updating - yasam.  componentDidUpdate()
-unmounting - olum.  componentWillUnmout()
+mounting - dogum. componentDidMount()
+updating - yasam. componentDidUpdate()
+unmounting - olum. componentWillUnmout()
 
-# componentDidUpdate(). state guncellendikten sonra kullanilir 
- - bir componentin state , propu degisirse guncellenme olursa sepet komponenti kullanic yen ibir urun ekledi , ilk render haricindeki sonraki her render dan sonra react bunu cagirir. 
+# componentDidUpdate(). state guncellendikten sonra kullanilir
 
- - cocuk dogduktan sonra 1 yasina girdi , dogum gunu partisi, her yil her yas guncellemesinden sonra yapilir. 
+- bir componentin state , propu degisirse guncellenme olursa sepet komponenti kullanic yen ibir urun ekledi , ilk render haricindeki sonraki her render dan sonra react bunu cagirir.
 
- - react ortaminda hava sicaklik verilerin getirdik , herbir saatte bir veriyi cekme, guncelleme. dolar/euro parimetresi ornegin yukselme olursa satis / dusus varsa al
- -kismen baglantili 
+- cocuk dogduktan sonra 1 yasina girdi , dogum gunu partisi, her yil her yas guncellemesinden sonra yapilir.
 
- ##  componentWillUnmout
+- react ortaminda hava sicaklik verilerin getirdik , herbir saatte bir veriyi cekme, guncelleme. dolar/euro parimetresi ornegin yukselme olursa satis / dusus varsa al
+  -kismen baglantili
 
-  - sepeti kaldir
-  - ekrandan kaldir
-  - dom tree den kaldir
+## componentWillUnmout
 
-  - sonraki temizlik islemler icin kullanilir .
-  - defin islemlerin yapildigi yerdir. 
-  - nettwork isteklerinin iptal edilmesi gibi 
+- sepeti kaldir
+- ekrandan kaldir
+- dom tree den kaldir
+
+- sonraki temizlik islemler icin kullanilir .
+- defin islemlerin yapildigi yerdir.
+- nettwork isteklerinin iptal edilmesi gibi
 
 # Siralama
-once constructor calisir 
-sonra render claisir 
+
+once constructor calisir
+sonra render claisir
 
 constructor run
 render run
 componentDidMount
 
 ==============================================
-                USEEFFECT HOOK
+USEEFFECT HOOK
 // //?===============================================
 // //! UseEffect Hook'u fonksiyonel componenler'te yan etkileri
 // //! (side effect) gerceklestirmek icin kullanilir.
 // //! componentDidMount,componentDidUpdate,ve componentWillUnmount
 // //! metotlarinin bir birlesimi gibi dusunulebilir.
 
-tek bir hook ile 3 fakrli islemei yapabiliyoruz . 
+tek bir hook ile 3 fakrli islemei yapabiliyoruz .
 
-- didMount 
+- didMount
 - didUpdate
-- 
-//! useEffect(() => {
-//*   /* ComponentDidMount code */
-//*      Kodlar
-//! }, []);
+- //! useEffect(() => {
+  //_ /_ ComponentDidMount code _/
+  //_ Kodlar
+  //! }, []);
 
 //! useEffect(() => {
-//*   */ ComponentDidMount + componentDidUpdate code */
+//\* _/ ComponentDidMount + componentDidUpdate code _/
 //! }, [state1, state2]);
 
 //! useEffect(() => {
-//?   /* ComponentDidMount code */
-//!   return () => {
-//*     //* componentWillUnmount code */
-//!   };
+//? /_ ComponentDidMount code _/
+//! return () => {
+//_ //_ componentWillUnmount code \*/
+//! };
 //! }, []);
 
 //! useEffect(() => {
-//*   //* componentDidMount code + componentDidUpdate code */
+//_ //_ componentDidMount code + componentDidUpdate code \*/
 
-//!   return () => {
-//*     //* componentWillUnmount code */
-//!   };
+//! return () => {
+//_ //_ componentWillUnmount code \*/
+//! };
 //! }, [state1, state2]); //? Dependency Array
 
-//   useEffect(() => {
-//     //? componentDidMount (Dependency Array bos ise)
-//     //? componentDidMount + componentDidUpdate (Dependency array bos degilse)
-//     //? Dependecny array'Deki state her degistiginde veya ilk render sonrasi bu kod blogu tekrardan calistirilir.
+// useEffect(() => {
+// //? componentDidMount (Dependency Array bos ise)
+// //? componentDidMount + componentDidUpdate (Dependency array bos degilse)
+// //? Dependecny array'Deki state her degistiginde veya ilk render sonrasi bu kod blogu tekrardan calistirilir.
 
-//     return () => {
-//       //? Cleanup function (componentWillUnmount)
-//     }
-//   }, [count]) //? Dependency Array
+// return () => {
+// //? Cleanup function (componentWillUnmount)
+// }
+// }, [count]) //? Dependency Array
 
 const UseEffectHook = () => {
-  const [count, setCount] = useState(0)
+const [count, setCount] = useState(0)
 
-  //!   ComponentDidMount
-  //   useEffect(() => {
-  //     //! fetch, async-await ,localStorage, setTimeout, setInterval();
-  //     console.log("componentDidMount")
-  //     setTimeout(() => {
-  //       alert("Data fetched")
-  //     }, 3000)
-  //   }, []) //? Dependecny array bos
+//! ComponentDidMount
+// useEffect(() => {
+// //! fetch, async-await ,localStorage, setTimeout, setInterval();
+// console.log("componentDidMount")
+// setTimeout(() => {
+// alert("Data fetched")
+// }, 3000)
+// }, []) //? Dependecny array bos
 
-  //!   ComponentDidUpdate
-  //   useEffect(() => {
-  //     console.log("componentDidMount + componentDidUpdate")
-  //     setTimeout(() => {
-  //       alert("Data fetched")
-  //     }, 3000)
-  //   }, [count]) //? count state'i her degistiginde yukaridaki mount+update kismi calisitirilir.
-
+//! ComponentDidUpdate
+// useEffect(() => {
+// console.log("componentDidMount + componentDidUpdate")
+// setTimeout(() => {
+// alert("Data fetched")
+// }, 3000)
+// }, [count]) //? count state'i her degistiginde yukaridaki mount+update kismi calisitirilir.
 
 # useEffect hooku
 
-  useEffect(() => ){
+useEffect(() => ){
 
     - componentDidMount + componentDidUpdate
 
     return () => {
-   
-    - componentWillUnmount 
+
+    - componentWillUnmount
     }
-  }, [state,state2] // dependecy array bagimlilik arrayi   
 
-  oldugunda state guncellendigi icin didMount + didUpdate de calisir. 
-  return oldugu zamanda otamatik olarak willUnmount calisir. 
+}, [state,state2] // dependecy array bagimlilik arrayi
 
-  # Fetch() icerisine url yazilir 
+oldugunda state guncellendigi icin didMount + didUpdate de calisir.
+return oldugu zamanda otamatik olarak willUnmount calisir.
 
+# Fetch() icerisine url yazilir
 
 ## Axios
 
-Crud - islemleri 
+Crud - islemleri
 
 GET - tum bilgileri almak istersen
-put. - tum veriler degisir put isteginde 
+put. - tum veriler degisir put isteginde
 patch
 post silme islemi
 
 postman gibi ortamlarda keylere tirnk konulur ""
 
- {
-        
+{
+
         "title": "Java Script",
         "description": "Stylesheet"
     }
 
-- axios post islemi axios.post(url, {veriler}). bu sekilde 
+- axios post islemi axios.post(url, {veriler}). bu sekilde
 
+## Router intro
 
-## Router intro 
+- ssr. / server side rendering..
 
-- ssr. / server side rendering.. 
+- csr / client server rendergin (SPA) singel page applications - ilk loaading suresi artirabilir dezanvatj olarak - seo acisindan zayif
 
-- csr / client server rendergin (SPA) singel page applications - ilk loaading suresi artirabilir dezanvatj olarak - seo acisindan zayif 
-
-- next.js de hem ssr - hem csr yapilabiliyor 
+- next.js de hem ssr - hem csr yapilabiliyor
 
 - path e gore conditinoal rendering sunuyor
 
-- NavLink Link den farki styllendirme yapabilmesi 
+- NavLink Link den farki styllendirme yapabilmesi
 
-# Rooter hooks 
+# Rooter hooks
 
 - useNavigate
-/ herhangi bir url yok demek 
+  / herhangi bir url yok demek
 
-- useParams hooks. - url deki id ile tnaimlanina kisim yakalanir dinamik kisim 
+- useParams hooks. - url deki id ile tnaimlanina kisim yakalanir dinamik kisim
 
-url den gelen degisken parametreyi veriyor 
-dynamik root. pathden sonraki "/posts/:id" : iki nokta ile olan verecegimi kisim / ost url den sonra bana ne gelrise glesin render et demek 
+url den gelen degisken parametreyi veriyor
+dynamik root. pathden sonraki "/posts/:id" : iki nokta ile olan verecegimi kisim / ost url den sonra bana ne gelrise glesin render et demek
 
-: sonraki  
+: sonraki
 
 - useLocation hooks
+
+# nested root
+
+Nested kullanacaksak rootler selc closing seklinde degilde bu sekilde olmali <Route path="/" element={<Home />} >
+
+        </Route>
+#    import { Outlet } from "react-router-dom";  -- Outlet ile childerenlari cagiririz. 
