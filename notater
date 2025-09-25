@@ -393,3 +393,9 @@ postman gibi ortamlarda keylere tirnk konulur ""
 
 ## Router intro 
 
+- ssr. / server side rendering.. 
+
+- csr / client server rendergin (SPA) singel page applications - ilk loaading suresi artirabilir dezanvatj olarak - seo acisindan zayif 
+
+- next.js de hem ssr - hem csr yapilabiliyor 
+
