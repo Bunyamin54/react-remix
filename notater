@@ -402,3 +402,7 @@ postman gibi ortamlarda keylere tirnk konulur ""
 - path e gore conditinoal rendering sunuyor
 
 - NavLink Link den farki styllendirme yapabilmesi 
+
+# Rooter hooks 
+
+- useNavigate
