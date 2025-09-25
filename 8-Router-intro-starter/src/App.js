@@ -13,11 +13,12 @@ function App() {
   return (
     <BrowserRouter>
       <Nav />
-      
+
       <Routes>
         {/* <Route path="/" element={<Home />} /> */}
         <Route path="/" element={<Home />} >
-        <Route path="about" element={<About/>} />
+        {/* index ile home --> gittigimizde direkt about dsergilemis oluyoruz */}
+        <Route index element={<About/>} />
         <Route path="courses" element={<Courses/>}/>
         </Route>
 

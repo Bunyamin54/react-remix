@@ -420,3 +420,5 @@ Nested kullanacaksak rootler selc closing seklinde degilde bu sekilde olmali <Ro
 
         </Route>
 #    import { Outlet } from "react-router-dom";  -- Outlet ile childerenlari cagiririz. 
+
+   {/* nested route yapisinda kullandiigmiz child componentleri outlet component ile sergilliyoruz  */}

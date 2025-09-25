@@ -7,6 +7,8 @@ const Home = () => {
     <div className="p-3">
       {/* <About />
       <Courses /> */}
+
+       {/* nested route yapisinda kullandiigmiz child componentleri outlet component ile sergilliyoruz  */}
       <Outlet/>
     </div>
   );
