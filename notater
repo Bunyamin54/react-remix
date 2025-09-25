@@ -399,3 +399,5 @@ postman gibi ortamlarda keylere tirnk konulur ""
 
 - next.js de hem ssr - hem csr yapilabiliyor 
 
+- path e gore conditinoal rendering sunuyor
+
