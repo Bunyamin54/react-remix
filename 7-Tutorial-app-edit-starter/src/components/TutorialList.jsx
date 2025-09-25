@@ -25,28 +25,25 @@ const TutorialList = ({ tutorials, getTutorials }) => {
   //     description: "JS library for UI design",
   //   },
   // ]
- 
- const handleDelete= async (id) => {
- 
   const BASE_URL = "https://tutorial-api.fullstack.clarusway.com/tutorials"
+
+  const handleDelete = async (id) => {
     try {
-        await axios.delete(`${BASE_URL}/${id}/`)
+      await axios.delete(`${BASE_URL}/${id}/`)
     } catch (error) {
       console.log(error)
     }
     getTutorials()
- }
+  }
 
-
-
-  // const editTutor = async (tutor) => {
-  //   try {
-  //     await axios.put(`${BASE_URL}/${tutor.id}/`, tutor)
-  //   } catch (error) {
-  //     console.log(error)
-  //   }
-  //   getTutorials()
-  // }
+  const editTutor = async (tutor) => {
+    try {
+      await axios.put(`${BASE_URL}/${tutor.id}/`, tutor)
+    } catch (error) {
+      console.log(error)
+    }
+    getTutorials()
+  }
 
   return (
     <div className="container mt-4">
@@ -90,7 +87,7 @@ const TutorialList = ({ tutorials, getTutorials }) => {
                     size={22}
                     type="button"
                     className="text-danger "
-                     onClick={()=> handleDelete(id)}
+                    onClick={() => handleDelete(id)}
                   />
                 </td>
               </tr>
