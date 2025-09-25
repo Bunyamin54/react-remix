@@ -407,3 +407,10 @@ postman gibi ortamlarda keylere tirnk konulur ""
 
 - useNavigate
 / herhangi bir url yok demek 
+
+- useParams hooks
+
+url den gelen degisken parametreyi veriyor 
+dynamik root. pathden sonraki "/posts/:id" : iki nokta ile olan verecegimi kisim / ost url den sonra bana ne gelrise glesin render et demek 
+
+: sonraki  
