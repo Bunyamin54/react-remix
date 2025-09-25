@@ -388,3 +388,4 @@ postman gibi ortamlarda keylere tirnk konulur ""
         "description": "Stylesheet"
     }
 
+- axios post islemi axios.post(url, {veriler}). bu sekilde 

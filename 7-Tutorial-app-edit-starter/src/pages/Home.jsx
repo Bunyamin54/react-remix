@@ -9,13 +9,11 @@ const Home = () => {
   const BASE_URL = "https://tutorial-api.fullstack.clarusway.com/";
 
   const getTutorials = async () => {
-    const{ data }= await axios(BASE_URL);
-
-    setTutorials(data);
-
     try {
+      const {data} = await axios(BASE_URL);
+      setTutorials(data);
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
   };
 
@@ -28,8 +26,8 @@ const Home = () => {
 
   return (
     <>
-      <AddTutorial />
-      <TutorialList />
+      <AddTutorial getTutorials={getTutorials}/>
+      <TutorialList tutorials={tutorials} getTutorials={getTutorials}/>
     </>
   );
 };
